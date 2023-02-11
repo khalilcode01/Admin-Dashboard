@@ -1,0 +1,151 @@
+html, body, .grid-container{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 5fr;
+    grid-template-areas: 
+    "sidebar header"
+    "sidebar main"
+    ;
+}
+.sidebar {
+    grid-area: sidebar;
+    background-color: #1992d4;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-weight: 700;
+    min-width: 240px;
+
+}
+.header {
+    grid-area: header;
+    background-color: #ffffff;
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    grid-template-areas: 
+    "top"
+    "bot";
+    
+}
+.main-container {
+    grid-area: main;
+    background-color: beige;
+}
+.material-symbols-outlined {
+    color: white;
+}
+.logo {
+    font-size: 27px;
+    height: 55px;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.one, .two {
+    font-size: 20px;
+    height: 50px;
+}
+.group-one {
+    height: 350px;
+}
+
+.group-one, .group-two {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+span {
+    position: relative;
+    top: 5px;
+    margin-right: 10px;
+}
+.top {
+    grid-area: top;
+    display: flex;
+    justify-content: space-between;
+}
+.bot {
+    grid-area: bot;
+    display: flex;
+    justify-content: space-between;
+}
+.top, .bot {
+    margin-top: 16px;
+    margin-left: 44px;
+}
+.search {
+    height: 27px;
+    border-radius: 15px;
+    border: none;
+    background-color: #e2e8f0;
+    width: 500px;
+}
+.search-logo, .ring {
+    color: black;
+}
+.right-top {
+    display: flex;
+    margin-top: -3px;
+    margin-right: 80px;
+    width: 290px;
+    align-items: center;
+    justify-content: space-around;
+}
+.pic {
+    height: 60px;
+    border-radius: 30px;
+    margin-left: 15px;
+}
+.username {
+    font-weight: 700;
+    margin-left: 16px;
+    font-size: 23px;
+}
+.left-bot {
+    display: flex;
+    align-items: center;
+    width: 400px;
+}
+.main-pic {
+    height: 100px;
+}
+.hi {
+    position: relative;
+    font-weight: 700;
+    font-size: 20px;
+    bottom: 15px;
+    left: 17px;
+}
+.user {
+    font-size: 26px;
+    position: absolute;
+    width: 250px;
+    top: 25px;
+}
+.right-bot {
+    display: flex;
+    align-items: center;
+    margin-right: 45px;
+}
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    width: 400px;
+}
+.button {
+    background-color: #1992d4;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    width: 110px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 18px;
+}

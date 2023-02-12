@@ -28,15 +28,11 @@ html, body, .grid-container{
     grid-area: header;
     background-color: #ffffff;
     display: grid;
-    grid-template-rows: 1fr 2.3fr;
+    grid-template-rows: 1fr 2fr;
     grid-template-areas: 
     "top"
     "bot";
-    
-}
-.main-container {
-    grid-area: main;
-    background-color: beige;
+
 }
 .material-symbols-outlined {
     color: white;
@@ -70,6 +66,7 @@ span {
     grid-area: top;
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 .bot {
     grid-area: bot;
@@ -81,11 +78,11 @@ span {
     margin-left: 44px;
 }
 .search {
-    height: 27px;
+    height: 30px;
     border-radius: 15px;
     border: none;
     background-color: #e2e8f0;
-    width: 500px;
+    width: 600px;
 }
 .search:focus {
     outline: none;
@@ -151,4 +148,80 @@ span {
     height: 50px;
     font-weight: 700;
     font-size: 18px;
+}
+.s {
+    display: flex;
+    margin-left: 40px;
+    align-items: center;
+    margin-top: -10px;
+}
+.search-logo, .ring {
+    margin-top: -4px;
+}
+.main-container {
+    grid-area: main;
+    background-color: #e2e8f0;
+    display: grid;
+    grid-template-columns: 3fr 1.3fr;
+    grid-template-areas: 
+    "left right";
+}
+.left-container {
+    position: relative;
+    grid-area: left;
+    display: grid;
+    grid-template-rows: 1fr 15fr;
+    margin-left: 60px;
+    
+}
+.right-container {
+    grid-area: right;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "ann"
+    "tren";
+}
+.cards {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(40%, 400px));
+    justify-content: flex-start;
+    
+}
+.card {
+    height: 200px;
+    border-radius: 10px;
+    background-color: white;
+    
+}
+.title{
+    position: relative;
+    font-weight: 700;
+    font-size: 20px;
+    top: 13px;
+}
+.ann {
+    grid-area: ann;
+    margin-top: 13px;
+    font-size: 20px;
+}
+.trend {
+    grid-area: trend;
+    margin-top: 13px;
+    
+    font-size: 20px;
+}
+.ann-cards, .trend-cards {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 40px;
+    background: #fff;
+    width: 300px;
+    border-radius: 13px;
+    margin-top: 10px;
+}
+.not {
+    font-weight: 700;
+    margin-bottom: 5px;
 }
